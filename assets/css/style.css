@@ -1,6 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 #background-video {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -24,11 +29,69 @@
   }
   
   h2 { font-size: 3rem; }
+
+  #left {
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 50px;
+    width: 100vh;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+    height: 50px;
+    background-color: rgba(0,0,0, 0.8);
+  }
+  #right{
+    position: fixed;
+    margin-bottom: 200px;
+    top: 0;
+    right:0;
+    width: 100vh;
+    transform-origin: right top;
+    transform: rotate(90deg) translateX(100%);
+    height: 50px;
+    background-color: rgba(0,0,0, 0.8);
+  }
+  #top{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(0,0,0, 0.8);
+  }
+  #bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(0,0,0, 0.8);
+  }
   
+  ul {
+    margin: 15px 20%;
+    display: flex;
+    /* flex-flow: row wrap; */
+    align-items: center;
+  }
+  ul li {
+    height: 20px;
+    list-style: none;
+    text-align: center;
+    transition: background 0.5s;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+/*   
   @media (max-width: 750px) {
       #background-video { display: none; }
       body {
-        background: url("../../ninja.mp4") no-repeat;
+        background: url("../img/ninja.png") no-repeat;
         background-size: cover;
       }
-  }
+  } */
