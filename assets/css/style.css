@@ -93,6 +93,7 @@ body{
   }
   #left ul li a{
     font-size: 16px;
+    
   }
 
   ul li a{
@@ -135,6 +136,11 @@ body{
     /* letter-spacing: 3px; */
     margin-right: 0;
     
+  }
+
+  #right li a{
+    font-family: Trebuchet MS;
+    font-weight: 800;
   }
   
 
