@@ -142,6 +142,8 @@ body{
 
   .menu-ul li a{
     color: #fff;
+    cursor: pointer;
+    font-family: monospace;
   }
 
   /* .ham-menu:hover .menu-ul {
