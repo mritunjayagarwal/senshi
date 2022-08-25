@@ -93,7 +93,8 @@ body{
   }
   #left ul li a{
     font-size: 16px;
-    
+    font-family: Trebuchet MS;
+    font-weight: 800;
   }
 
   ul li a{
