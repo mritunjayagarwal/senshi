@@ -19,10 +19,32 @@ body{
   
   /* page content */
 
+  .nav-brand{
+    padding: 0 70px;
+  }
+
   .heading{
     position: fixed;
     bottom: 70px;
     left: 120px;
+    font-size: 30px;
+    text-shadow: 0 0 3px #000, 5px 5px 5px #000;
+  }
+
+  .senshi{
+    font-size: 150px;
+  }
+
+  .japanese, .senshi-heading{
+    color: #fff;font-size: 30px;
+  }
+
+  .japanese{
+    margin-top: 0px
+  }
+
+  .senshi-heading{
+    margin-top: -25px;letter-spacing: 4px;font-size: 25px;
   }
 
 
@@ -33,61 +55,21 @@ body{
     margin: 0;
   }
 
-  #left {
-    position: absolute;
-    top: 0;
-    left:0;
-    bottom: 50px;
-    width: 100vh;
-    transform-origin: left top;
-    transform: rotate(-90deg) translateX(-100%);
-    height: 70px;
-    z-index: 0;
-    background-color: rgba(37, 35, 35, 0.3);
-  }
-  #right{
-    position: absolute;
-    margin-bottom: 200px;
-    top: 0;
-    right:0;
-    width: 100vh;
-    z-index: -1 !important;
-    transform-origin: right top;
-    transform: rotate(90deg) translateX(100%);
-    height: 70px;
-    background-color: rgba(37, 35, 35, 0.3);
-  }
-  #top{
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 70px;
-    background-color: rgba(37, 35, 35, 0.3);
-    font-family: 'Ink Free', sans-serif;
-  }
-  #bottom{
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 70px;
-    background-color: rgba(37, 35, 35, 0.3);
-  }
-
-  #left ul{
+  .left ul{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     margin: 75px 0 0 110px;
   }
 
-  #left ul li{
+  .left ul li{
     display: block;
     letter-spacing: 3px;
     margin-right: 10px;
     font-weight: 500;
     
   }
-  #left ul li a{
+  .left ul li a{
     font-size: 16px;
     font-family: Trebuchet MS;
     font-weight: 800;
@@ -97,20 +79,20 @@ body{
     font-family:'Courier New', Courier, monospace;
   }
 
-  #right ul{
+  .right ul{
     margin: 30px;
     display: flex;
     list-style: none;
   }
 
-  #right ul li{
+  .right ul li{
     display: block;
     /* letter-spacing: 3px; */
     margin-right: 0;
     
   }
 
-  #right li a{
+  .right li a{
     font-family: Trebuchet MS;
     font-weight: 800;
   }
@@ -132,6 +114,7 @@ body{
   .menu-ul{
     display: none;
     list-style: none;
+    margin-top: -50px; margin-left: -180px;position: fixed;right: 30px; bottom: 40px;z-index: 1;
   }
 
   .menu-ul li {
@@ -149,6 +132,10 @@ body{
   /* .ham-menu:hover .menu-ul {
     display: block;
   } */
+
+  .tokenomics{
+    font-size: 30px; color:#fff; word-wrap: break-word;margin-left: 30px; font-family:monospace;margin-top: 20px
+  }
 
   .overlay {
     height: 100%;
@@ -189,12 +176,7 @@ body{
     right: 45px;
     font-size: 60px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
+
+  .left-right{
+    position: fixed; top: 70px; bottom: 70px; right: 0; left:0;overflow-y: hidden;
   }
